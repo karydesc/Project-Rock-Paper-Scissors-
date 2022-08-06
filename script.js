@@ -52,20 +52,20 @@ while(retry!="no"){
     Game();
     if (results=="Player wins"){
         playerScore++;
-        console.log(`You entered: '${choice}' and the computer chose: '${computerSelection}'... the result is '${results}'`)
+        window.alert(`You entered: '${choice}' and the computer chose: '${computerSelection}'... the result is '${results}'`)
     }else if(results=="Computer wins"){
         computerScore++;
-        console.log(`You entered: '${choice}' and the computer chose: '${computerSelection}'... the result is '${results}'`)
+        window.alert(`You entered: '${choice}' and the computer chose: '${computerSelection}'... the result is '${results}'`)
     }
      else{
-        console.log("Tie!")
+        window.alert("Tie!")
      }
 
     
-    console.log(`Player score: ${playerScore}, Computer score: ${computerScore}`);
+    window.alert(`Player score: ${playerScore}, Computer score: ${computerScore}`);
   }
-  console.log(`Game is over! final score: P:${playerScore}-C:${computerScore}`)
-  retry=window.prompt("Would you like to try again")
+  window.alert(`Game is over! final score: P:${playerScore}-C:${computerScore}`)
+  retry=window.prompt("Would you like to try again?")
     
   
 }
